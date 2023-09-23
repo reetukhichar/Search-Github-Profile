@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;1,300&family=Piazzolla:ital,wght@0,300;0,400;0,800;1,200&family=Poppins:wght@100;200;300;400&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&family=Ubuntu:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* @media screen and (min-width: 1280px) { */
+/* body{
+    width: 100vw;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    /* height: 100vh; */
+    width: 100vw;
+    padding: 20px;
+}
+#text{
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.input-box{
+    display: flex;
+}
+.input-box input{
+    /* max-width: 50vw; */
+    width: 45vw;
+    /* height: 5vh; */
+    outline: none;
+    padding: 9px 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid black;
+}
+.input-box input:focus-visible{
+    outline: 1px solid purple;
+}
+.btn{
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(107, 5, 107);
+}
+.btn:active{
+    background-color: rgb(178, 32, 178);
+}
+.card{
+    width: 60vw;
+    height: 100%;
+    /* border: 1px solid gray ; */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    gap: 3rem;
+    transition: 0.2s ease-in;
+}
+.card:hover{
+    transform: rotate(-2deg) scale(1.03);
+    transition: 0.3s ease-in;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.profile img{
+    height: 8rem;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 1rem rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 50%;
+}
+.card h1{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.card p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* .name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+} */
+.name p{
+    place-self: start;
+    font-weight: bolder;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    place-self: start;
+    gap: 0.4rem;
+}
+/* .middle h1{
+    place-self: start;
+} */
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.info p{
+    margin-top: 8px;
+}
+
+
+ @media(width <= 425px) {
+    #text{
+        font-size: 0.7rem;
+    }
+    .input-box{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .input-box input{
+        width: 70vw;
+        font-size: 0.6rem;
+    }
+    .btn{
+        font-size: 0.6rem;
+    }
+    .card{
+        height: 100%;
+        font-size: 0.4rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .card h1{
+        font-size: 1rem;
+    }
+    .card p{
+        font-size: 0.7rem;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        place-self: center;
+        align-items: center;
+        gap: 1.3rem;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile img{
+        height: 5rem;
+    }
+    .middle{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        place-self: center;
+        align-items: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+    
+}  
+@media(width <= 768px) {
+    #text{
+        font-size: 1rem;
+    }
+    .input-box{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .input-box input{
+        width: 70vw;
+        font-size: 0.9rem;
+    }
+    .btn{
+        font-size: 0.9rem;
+    }
+    .card{
+        height: 100%;
+        font-size: 0.7rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .card h1{
+        font-size: 1.4rem;
+    }
+    .card p{
+        font-size: 0.9rem;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        place-self: center;
+        align-items: center;
+        gap: 1.3rem;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        place-self: center;
+        align-items: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+    
+}  
+@media(width > 768px){
+    .name {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    .middle h1{
+        place-self: start;
+    } 
+
+}
